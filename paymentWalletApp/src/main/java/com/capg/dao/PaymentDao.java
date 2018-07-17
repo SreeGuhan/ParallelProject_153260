@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.cap.bean.BankClientDetails;
+import com.capg.service.PaymentService;
 
 public class PaymentDao implements IPaymentDao {
 	
@@ -21,7 +22,10 @@ public class PaymentDao implements IPaymentDao {
 	{
 		return flag;
 	}
-	
+	public boolean logIn(String username, String Password)
+	{
+		return flag;
+	}
 	public boolean deposit(String customerId, String password, int balance) {
 		return flag;
 	}
@@ -29,13 +33,28 @@ public class PaymentDao implements IPaymentDao {
 	{
 		return flag;
 	}
-	public boolean fundTransfer(String customerId, String password, String receiverAccountNumber,int balance)
+	public boolean fundTransfer(String customerId, String password, long account2,int balance)
 	{
 		return flag;
 	}
-	public boolean printtransaction( String customerId, String password)
+	public boolean printTransaction( String customerId, String password)
 	{
 		return flag;
+	}
+
+	public boolean fundTransfer(String customerId, String password, String receiverAccountNumber, int balance) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean printtransaction(String customerId, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static List<PaymentService> getList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

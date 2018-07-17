@@ -2,18 +2,21 @@ package com.cap.bean;
 
 public class BankClientDetails {
 	
-	private int customerId;
+	private String customerId;
 	private String customerName;
 	private String emailId;
 	private String phoneNo;
-	private long balance;
+	private double balance;
 	private String password;
-	
-	//Getters and setters
-	public int getCustomerId() {
+	private String username;
+	private String gender;
+	private long account1;
+	private long account2;
+	private double amount;
+	public String getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(int customerId) {
+	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
 	public String getCustomerName() {
@@ -34,10 +37,10 @@ public class BankClientDetails {
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
 	}
-	public long getBalance() {
+	public double getBalance() {
 		return balance;
 	}
-	public void setBalance(long balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 	public String getPassword() {
@@ -46,11 +49,44 @@ public class BankClientDetails {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public long getAccount1() {
+		return account1;
+	}
+	public void setAccount1(long account1) {
+		this.account1 = account1;
+	}
+	public long getAccount2() {
+		return account2;
+	}
+	public void setAccount2(long account2) {
+		this.account2 = account2;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
 	@Override
 	public String toString() {
 		return "BankClientDetails [customerId=" + customerId + ", customerName=" + customerName + ", emailId=" + emailId
-				+ ", phoneNo=" + phoneNo + ", balance=" + balance + ", password=" + password + "]";
+				+ ", phoneNo=" + phoneNo + ", balance=" + balance + ", password=" + password + ", username=" + username
+				+ ", gender=" + gender + ", account1=" + account1 + ", account2=" + account2 + ", amount=" + amount
+				+ "]";
 	}
 	
-
+	
+	
 }
